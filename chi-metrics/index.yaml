@@ -3,13 +3,13 @@ entries:
   chi-metrics:
   - apiVersion: v2
     appVersion: "0.1"
-    created: "2024-08-14T14:56:19.235883+03:00"
+    created: "2024-08-15T08:10:14.972031+03:00"
     description: A Helm chart for Kubernetes
     digest: 4ef91fb22dc7eedd282785d5eeef4e9f95834b7d48323f5dd50cbca4eb1f3eb0
     name: chi-metrics
     type: application
     urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics-0.4.0.tgz
+    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
     appVersion: "0.9"
