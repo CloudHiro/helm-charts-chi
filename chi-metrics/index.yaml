@@ -2,10 +2,20 @@ apiVersion: v1
 entries:
   chi-metrics:
   - apiVersion: v2
-    appVersion: "0.4"
-    created: "2024-12-03T12:43:08.414526+01:00"
+    appVersion: "0.5"
+    created: "2025-01-22T12:56:38.26658+01:00"
     description: a helm chart to deploy CloudHiro kubernets metrics collector
-    digest: c43bc472d2f0eb23073dd8845306e0af61abd862e4d04056650d15c594f25ce9
+    digest: c72223ee2e5841146e651c58d32de58e3885201c0daf4a01fdee5f437369de4f
+    name: chi-metrics
+    type: application
+    urls:
+    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.4.5.tgz
+    version: 0.4.5
+  - apiVersion: v2
+    appVersion: "0.4"
+    created: "2025-01-22T12:56:38.265578+01:00"
+    description: a helm chart to deploy CloudHiro kubernets metrics collector
+    digest: e875350a5cd30a23152caaa47f821f06794b43923de955d11ec49a45ffba9cb0
     name: chi-metrics
     type: application
     urls:
@@ -13,7 +23,7 @@ entries:
     version: 0.4.4
   - apiVersion: v2
     appVersion: "0.3"
-    created: "2024-12-03T12:43:08.413707+01:00"
+    created: "2025-01-22T12:56:38.261674+01:00"
     description: a helm chart to deploy CloudHiro kubernets metrics collector
     digest: 698fd06c6cee84b318f9634fd5c07e828d8db04f7a3d3b900c2e3038cd621619
     name: chi-metrics
@@ -23,7 +33,7 @@ entries:
     version: 0.4.3
   - apiVersion: v2
     appVersion: "0.1"
-    created: "2024-12-03T12:43:08.412949+01:00"
+    created: "2025-01-22T12:56:38.258647+01:00"
     description: a helm chart to deploy CloudHiro kubernets metrics collector
     digest: eaf28f50b2d0331fcec4884fea670fe6be0a7bb16a6465fbb31d2a3367c9b051
     name: chi-metrics
@@ -33,7 +43,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: "0.1"
-    created: "2024-12-03T12:43:08.411878+01:00"
+    created: "2025-01-22T12:56:38.257783+01:00"
     description: a helm chart to deploy CloudHiro kubernets metrics collector
     digest: 0f30d714171c39b5f57a0200ae33d4041af121ff04a97c269a673beef7fed507
     name: chi-metrics
@@ -41,75 +51,4 @@ entries:
     urls:
     - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.4.0.tgz
     version: 0.4.0
-  - apiVersion: v2
-    appVersion: "0.9"
-    created: "2024-12-03T12:43:08.410993+01:00"
-    description: a helm chart to deploy CloudHiro kubernets metrics collector. this
-      version contains deployemnts and memcache as a deployment, not staefulset
-    digest: 4c517d01111de09ce11b212bda0d51368e900f6594b2321ba1b82d3d5133de85
-    name: chi-metrics
-    type: application
-    urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.3.2.tgz
-    version: 0.3.2
-  - apiVersion: v2
-    appVersion: "0.9"
-    created: "2024-12-03T12:43:08.410139+01:00"
-    description: a helm chart to deploy CloudHiro kubernets metrics collector.
-    digest: 16033841dc00ae24f81ec3218d0e1238d4f9edd8c55cbddf3e93e8e9a1eda63c
-    name: chi-metrics
-    type: application
-    urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.3.1.tgz
-    version: 0.3.1
-  - apiVersion: v2
-    appVersion: "0.9"
-    created: "2024-12-03T12:43:08.409154+01:00"
-    description: a helm chart to deploy CloudHiro kubernets metrics collector.
-    digest: 0896bbe72c2b796eaee93cced07e941638b864e013377f53e0c434f1ef9b74ac
-    name: chi-metrics
-    type: application
-    urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: "0.8"
-    created: "2024-12-03T12:43:08.407731+01:00"
-    description: a helm chart to deploy CloudHiro kubernets metrics collector.
-    digest: 93cd71c7de042f8073455d4056e8408020c2ea1f2e0e09a21c475d0147e0f1cc
-    name: chi-metrics
-    type: application
-    urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.2.2.tgz
-    version: 0.2.2
-  - apiVersion: v2
-    appVersion: "0.8"
-    created: "2024-12-03T12:43:08.404729+01:00"
-    description: a helm chart to deploy CloudHiro kubernets metrics collector.
-    digest: cec644bfd9dc97e6dcd18c5489762bcf2228f3e8e2724106d70e79af8a75195f
-    name: chi-metrics
-    type: application
-    urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.2.1.tgz
-    version: 0.2.1
-  - apiVersion: v2
-    appVersion: "0.8"
-    created: "2024-12-03T12:43:08.404066+01:00"
-    description: a helm chart to deploy CloudHiro kubernets metrics collector.
-    digest: 1bba9934355a0187ad7e4650620c11c8d607b849eba9e7e465bc00aab19aa45c
-    name: chi-metrics
-    type: application
-    urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.2.0.tgz
-    version: 0.2.0
-  - apiVersion: v2
-    appVersion: "0.8"
-    created: "2024-12-03T12:43:08.403406+01:00"
-    description: a helm chart to deploy CloudHiro kubernets metrics collector.
-    digest: 1c8dd10c8fe7a0f93b02f493549cc62721aea64c190bb1c236df0ddc50edd8bf
-    name: chi-metrics
-    type: application
-    urls:
-    - https://cloudhiro.github.io/helm-charts-chi/chi-metrics/chi-metrics-0.1.0.tgz
-    version: 0.1.0
-generated: "2024-12-03T12:43:08.398707+01:00"
+generated: "2025-01-22T12:56:38.255759+01:00"
