@@ -2,6 +2,12 @@
 
 the matching "git page" is at https://cloudhiro.github.io/helm-charts-chi
 
-for now the only available chart is at https://cloudhiro.github.io/helm-charts-chi/chi-metrics/index.yaml
+to install this run:  
+```bash 
+helm install -n chi-metrics-go --create-namespace chi-metrics-go  \
+--set collectorDeployment.initialToken=<initial token> \
+cloudhiro/chi-metrics
 
-current version - chi-metrics-0.2.2.tgz
+```
+
+To get the initial token please visit https://ops.cloudhiro.com/AWS/AWSShowExternalID.php or contact your account manager.
