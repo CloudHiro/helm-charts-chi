@@ -19,6 +19,7 @@ helm upgrade   -n chi-metrics-go --create-namespace chi-metrics-go --install \
 cloudhiro/chi-metrics
 
 ```
+To get the initial token please visit https://ops.cloudhiro.com/AWS/AWSShowExternalID.php or contact your account manager.
 
 #### Useful values
 
@@ -31,7 +32,10 @@ cloudhiro/chi-metrics
 | `nodeSelector`(see comment below)  | Specifies the operating system for the Kubernetes node.                        | `nodeSelector."kubernetes\.io/arch"=amd64`                                     |
 | `tolerations`(see comment below)                     | Specifies tolerations for scheduling pods on nodes with specific taints.       | `tolerations[0].key=dedicated11, tolerations[0].operator=Equal, tolerations[0].value=chi, tolerations[0].effect=NoSchedule` |
 
-node selector is a composite value and should be passed accordingly. This is a good example `--set nodeSelector."kubernetes\.io/arch"=amd64`.  
+node selector is a composite value and should be passed accordingly. This is a good example 
+```bash
+--set nodeSelector."kubernetes\.io/arch"=amd64
+```  
 tolerations are also composite and should be passed accordingly. for example:
 ```bash
 --set 'tolerations[0].key=dedicated11' \
@@ -41,5 +45,3 @@ tolerations are also composite and should be passed accordingly. for example:
 ```
 Please note that all 4 lines should be passed.
 
-
-To get the initial token please visit https://ops.cloudhiro.com/AWS/AWSShowExternalID.php or contact your account manager.
