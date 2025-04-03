@@ -29,17 +29,17 @@ cloudhiro/chi-metrics
 | `collectorDeployment.image.repository` | The repository URL for the collector Docker image.                            | `public.ecr.aws/f3u3y6v0/k8s-contoller-go-collector:0.8` |
 | `memcached.image`                  | The repository URL for the memcached Docker image.                             | `public.ecr.aws/f3u3y6v0/k8s-memcache:0.8`    |
 | `nodeSelector`(see comment below)  | Specifies the operating system for the Kubernetes node.                        | `nodeSelector."kubernetes\.io/arch"=amd64`                                     |
-| `tolerations`((see comment below)                     | Specifies tolerations for scheduling pods on nodes with specific taints.       | `tolerations[0].key=dedicated11, tolerations[0].operator=Equal, tolerations[0].value=chi, tolerations[0].effect=NoSchedule` |
+| `tolerations`(see comment below)                     | Specifies tolerations for scheduling pods on nodes with specific taints.       | `tolerations[0].key=dedicated11, tolerations[0].operator=Equal, tolerations[0].value=chi, tolerations[0].effect=NoSchedule` |
 
-node selector is a composite value and shuld be passed accordingly. This is a good example `--set nodeSelector."kubernetes\.io/arch"=amd64`.  
+node selector is a composite value and should be passed accordingly. This is a good example `--set nodeSelector."kubernetes\.io/arch"=amd64`.  
 tolerations are also composite and should be passed accordingly. for example:
 ```bash
 --set 'tolerations[0].key=dedicated11' \
 --set 'tolerations[0].operator=Equal' \
 --set 'tolerations[0].value=chi' \
---set 'tolerations[0].effect=NoSchedule' \
+--set 'tolerations[0].effect=NoSchedule'
 ```
-Please note that all 4 lines shuold be passed.
+Please note that all 4 lines should be passed.
 
 
 To get the initial token please visit https://ops.cloudhiro.com/AWS/AWSShowExternalID.php or contact your account manager.
