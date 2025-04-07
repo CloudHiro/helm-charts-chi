@@ -9,7 +9,7 @@ helm repo add cloudhiro https://cloudhiro.github.io/helm-charts-chi/chi-metrics
 
 To update run:
 ```bash
-helm pull cloudhiro/chi-metrics   
+helm repo update cloudhiro
 ```
 
 To install this run:  
