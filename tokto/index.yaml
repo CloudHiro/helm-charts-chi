@@ -1,14 +1,25 @@
 apiVersion: v1
 entries:
+  chi-metrics:
+  - apiVersion: v2
+    appVersion: "0.8"
+    created: "2025-10-25T21:24:19.139014+02:00"
+    description: a helm chart to deploy CloudHiro kubernets metrics collector
+    digest: 04a903e4f7f0b933ae6e3a2ef935cd29e1971c25d768c15be5f6ed9dc36df848
+    name: chi-metrics
+    type: application
+    urls:
+    - https://cloudhiro.github.io/helm-charts-chi/tokto/chi-metrics-0.4.7.tgz
+    version: 0.4.7
   tokto:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-10-25T20:10:12.119591+02:00"
+    created: "2025-10-25T21:24:19.139836+02:00"
     description: A Helm chart for Kubernetes
-    digest: dcf9a06328b775a2d6debfca6052ab9214764487555a777ad498482a25ef5aca
+    digest: f396b45826887f7bc708e32f8fe17281001eba38d2840167f1e36b719a0d8123
     name: tokto
     type: application
     urls:
     - https://cloudhiro.github.io/helm-charts-chi/tokto/tokto-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-25T20:10:12.117743+02:00"
+generated: "2025-10-25T21:24:19.136098+02:00"
