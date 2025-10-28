@@ -85,6 +85,32 @@ global:
 - Ensure your database is accessible from the Kubernetes cluster
 - Configure appropriate security groups and network access
 
+### Ingress Configuration
+To expose your services through an AWS Application Load Balancer (ALB), you can use the following ingress configuration:
+
+```yaml
+ingress:
+  enabled: true
+  className: alb
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/healthcheck-path: /ping
+```
+
+This configuration:
+- Enables ALB ingress controller
+- Sets up both HTTP (80) and HTTPS (443) listeners
+- Configures SSL redirect to HTTPS
+- Uses IP target type for the ALB
+- Defines a health check endpoint at `/ping`
+- Makes the ALB internet-facing
+
+**Note**: Ensure you have the AWS Load Balancer Controller installed in your cluster before enabling the ALB ingress.
+
 ## Support
 
 For support or questions, please contact your account manager or visit [CloudHiro support](https://cloudhiro.com/support).
