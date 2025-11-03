@@ -3,12 +3,12 @@ entries:
   tokto:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-10-27T16:52:47.372687+01:00"
+    created: "2025-11-03T09:12:01.464832+01:00"
     description: A Helm chart for Kubernetes
-    digest: 068c6d178f98b4276040f1981437591a9dfc83a4acf7e4a65b56e71225241139
+    digest: 5f966875ef5080910d6553973a846a6ee50620e020adba92ba97f0cd9bc072b0
     name: tokto
     type: application
     urls:
     - https://cloudhiro.github.io/helm-charts-chi/tokto/tokto-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-27T16:52:47.369499+01:00"
+generated: "2025-11-03T09:12:01.462472+01:00"
